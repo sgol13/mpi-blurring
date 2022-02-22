@@ -1,9 +1,7 @@
-#include "Alloc.h"
 #include "ArithmeticMeanFunction.h"
 #include "DataProcessor.h"
 #include "MPIDataProcessor.h"
 #include "MagicFuntion.h"
-#include "SequentialDataProcessor.h"
 #include "SimpleInitialDataGenerator.h"
 #include "mpi.h"
 #include <chrono>
@@ -38,18 +36,21 @@ int main(int argc, char *argv[]) {
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 
     const int MARGIN = 2;
-    const int DATA_SIZE = 14;
+    const int DATA_SIZE = 12;
     const int REPETITIONS = 4;
 
     int dataPortion = calcDataPortion(MARGIN);
     MagicFuntion *mf = new ArithmeticMeanFunction(dataPortion);
-    // DataProcessor *dp = new SequentialDataProcessor();
     DataProcessor *dp = new MPIDataProcessor();
 
     dp->setMagicFunction(mf);
 
     if (rank == 0) {
-        double **initialData = tableAlloc(DATA_SIZE);
+
+        double **initialData = new double *[DATA_SIZE];
+        for (int i = 0; i < DATA_SIZE; i++)
+            initialData[i] = new double[DATA_SIZE];
+
         InitialDataGenerator *generator = new SimpleInitialDataGenerator(1, 10);
         generator->fillWithData(initialData, DATA_SIZE, MARGIN);
         showTable(initialData, DATA_SIZE);

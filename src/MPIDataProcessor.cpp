@@ -71,7 +71,9 @@ void MPIDataProcessor::shareData() {
     // SHARE DATA FRAMES
     if (rank == 0) {
 
-        nextData = tableAlloc(dataSize);
+        nextData = new double *[dataSize];
+        for (int i = 0; i < dataSize; i++)
+            nextData[i] = new double[dataSize];
 
         // send data frames to all other processes
         for (int dest = 1; dest < procNum; dest++) {

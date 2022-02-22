@@ -1,4 +1,3 @@
-#include "Alloc.h"
 #include "DataProcessor.h"
 #include "mpi.h"
 #include <iostream>

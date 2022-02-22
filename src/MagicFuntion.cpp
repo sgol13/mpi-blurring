@@ -7,13 +7,8 @@
 
 #include "MagicFuntion.h"
 
-MagicFuntion::MagicFuntion(int dataPortionSize ) : dataPortionSize( dataPortionSize ) {
-}
+MagicFuntion::MagicFuntion(int dataPortionSize) : dataPortionSize(dataPortionSize) {}
 
-MagicFuntion::~MagicFuntion() {
-}
+MagicFuntion::~MagicFuntion() {}
 
-int MagicFuntion::getDataPortionSize() {
-	return dataPortionSize;
-}
-
+int MagicFuntion::getDataPortionSize() { return dataPortionSize; }

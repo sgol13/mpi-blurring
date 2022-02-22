@@ -123,33 +123,6 @@ exe/fast:
 	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/build
 .PHONY : exe/fast
 
-src/Alloc.o: src/Alloc.cpp.o
-
-.PHONY : src/Alloc.o
-
-# target to build an object file
-src/Alloc.cpp.o:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/Alloc.cpp.o
-.PHONY : src/Alloc.cpp.o
-
-src/Alloc.i: src/Alloc.cpp.i
-
-.PHONY : src/Alloc.i
-
-# target to preprocess a source file
-src/Alloc.cpp.i:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/Alloc.cpp.i
-.PHONY : src/Alloc.cpp.i
-
-src/Alloc.s: src/Alloc.cpp.s
-
-.PHONY : src/Alloc.s
-
-# target to generate assembly for a file
-src/Alloc.cpp.s:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/Alloc.cpp.s
-.PHONY : src/Alloc.cpp.s
-
 src/ArithmeticMeanFunction.o: src/ArithmeticMeanFunction.cpp.o
 
 .PHONY : src/ArithmeticMeanFunction.o
@@ -285,60 +258,6 @@ src/MagicFuntion.cpp.s:
 	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/MagicFuntion.cpp.s
 .PHONY : src/MagicFuntion.cpp.s
 
-src/PRIR2021_Z01.o: src/PRIR2021_Z01.cpp.o
-
-.PHONY : src/PRIR2021_Z01.o
-
-# target to build an object file
-src/PRIR2021_Z01.cpp.o:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/PRIR2021_Z01.cpp.o
-.PHONY : src/PRIR2021_Z01.cpp.o
-
-src/PRIR2021_Z01.i: src/PRIR2021_Z01.cpp.i
-
-.PHONY : src/PRIR2021_Z01.i
-
-# target to preprocess a source file
-src/PRIR2021_Z01.cpp.i:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/PRIR2021_Z01.cpp.i
-.PHONY : src/PRIR2021_Z01.cpp.i
-
-src/PRIR2021_Z01.s: src/PRIR2021_Z01.cpp.s
-
-.PHONY : src/PRIR2021_Z01.s
-
-# target to generate assembly for a file
-src/PRIR2021_Z01.cpp.s:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/PRIR2021_Z01.cpp.s
-.PHONY : src/PRIR2021_Z01.cpp.s
-
-src/SequentialDataProcessor.o: src/SequentialDataProcessor.cpp.o
-
-.PHONY : src/SequentialDataProcessor.o
-
-# target to build an object file
-src/SequentialDataProcessor.cpp.o:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/SequentialDataProcessor.cpp.o
-.PHONY : src/SequentialDataProcessor.cpp.o
-
-src/SequentialDataProcessor.i: src/SequentialDataProcessor.cpp.i
-
-.PHONY : src/SequentialDataProcessor.i
-
-# target to preprocess a source file
-src/SequentialDataProcessor.cpp.i:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/SequentialDataProcessor.cpp.i
-.PHONY : src/SequentialDataProcessor.cpp.i
-
-src/SequentialDataProcessor.s: src/SequentialDataProcessor.cpp.s
-
-.PHONY : src/SequentialDataProcessor.s
-
-# target to generate assembly for a file
-src/SequentialDataProcessor.cpp.s:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/SequentialDataProcessor.cpp.s
-.PHONY : src/SequentialDataProcessor.cpp.s
-
 src/SimpleInitialDataGenerator.o: src/SimpleInitialDataGenerator.cpp.o
 
 .PHONY : src/SimpleInitialDataGenerator.o
@@ -366,6 +285,33 @@ src/SimpleInitialDataGenerator.cpp.s:
 	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.s
 .PHONY : src/SimpleInitialDataGenerator.cpp.s
 
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -375,9 +321,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... exe"
 	@echo "... edit_cache"
-	@echo "... src/Alloc.o"
-	@echo "... src/Alloc.i"
-	@echo "... src/Alloc.s"
 	@echo "... src/ArithmeticMeanFunction.o"
 	@echo "... src/ArithmeticMeanFunction.i"
 	@echo "... src/ArithmeticMeanFunction.s"
@@ -393,15 +336,12 @@ help:
 	@echo "... src/MagicFuntion.o"
 	@echo "... src/MagicFuntion.i"
 	@echo "... src/MagicFuntion.s"
-	@echo "... src/PRIR2021_Z01.o"
-	@echo "... src/PRIR2021_Z01.i"
-	@echo "... src/PRIR2021_Z01.s"
-	@echo "... src/SequentialDataProcessor.o"
-	@echo "... src/SequentialDataProcessor.i"
-	@echo "... src/SequentialDataProcessor.s"
 	@echo "... src/SimpleInitialDataGenerator.o"
 	@echo "... src/SimpleInitialDataGenerator.i"
 	@echo "... src/SimpleInitialDataGenerator.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
