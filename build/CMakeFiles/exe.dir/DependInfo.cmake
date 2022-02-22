@@ -4,8 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/szymon/code/projects/mpi-blurring/src/DataProcessor.cpp" "/home/szymon/code/projects/mpi-blurring/build/CMakeFiles/exe.dir/src/DataProcessor.cpp.o"
-  "/home/szymon/code/projects/mpi-blurring/src/MPIDataProcessor.cpp" "/home/szymon/code/projects/mpi-blurring/build/CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o"
+  "/home/szymon/code/projects/mpi-blurring/src/ImageBlurrer.cpp" "/home/szymon/code/projects/mpi-blurring/build/CMakeFiles/exe.dir/src/ImageBlurrer.cpp.o"
   "/home/szymon/code/projects/mpi-blurring/src/main.cpp" "/home/szymon/code/projects/mpi-blurring/build/CMakeFiles/exe.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -123,59 +123,32 @@ exe/fast:
 	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/build
 .PHONY : exe/fast
 
-src/DataProcessor.o: src/DataProcessor.cpp.o
+src/ImageBlurrer.o: src/ImageBlurrer.cpp.o
 
-.PHONY : src/DataProcessor.o
-
-# target to build an object file
-src/DataProcessor.cpp.o:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/DataProcessor.cpp.o
-.PHONY : src/DataProcessor.cpp.o
-
-src/DataProcessor.i: src/DataProcessor.cpp.i
-
-.PHONY : src/DataProcessor.i
-
-# target to preprocess a source file
-src/DataProcessor.cpp.i:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/DataProcessor.cpp.i
-.PHONY : src/DataProcessor.cpp.i
-
-src/DataProcessor.s: src/DataProcessor.cpp.s
-
-.PHONY : src/DataProcessor.s
-
-# target to generate assembly for a file
-src/DataProcessor.cpp.s:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/DataProcessor.cpp.s
-.PHONY : src/DataProcessor.cpp.s
-
-src/MPIDataProcessor.o: src/MPIDataProcessor.cpp.o
-
-.PHONY : src/MPIDataProcessor.o
+.PHONY : src/ImageBlurrer.o
 
 # target to build an object file
-src/MPIDataProcessor.cpp.o:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o
-.PHONY : src/MPIDataProcessor.cpp.o
+src/ImageBlurrer.cpp.o:
+	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/ImageBlurrer.cpp.o
+.PHONY : src/ImageBlurrer.cpp.o
 
-src/MPIDataProcessor.i: src/MPIDataProcessor.cpp.i
+src/ImageBlurrer.i: src/ImageBlurrer.cpp.i
 
-.PHONY : src/MPIDataProcessor.i
+.PHONY : src/ImageBlurrer.i
 
 # target to preprocess a source file
-src/MPIDataProcessor.cpp.i:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.i
-.PHONY : src/MPIDataProcessor.cpp.i
+src/ImageBlurrer.cpp.i:
+	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/ImageBlurrer.cpp.i
+.PHONY : src/ImageBlurrer.cpp.i
 
-src/MPIDataProcessor.s: src/MPIDataProcessor.cpp.s
+src/ImageBlurrer.s: src/ImageBlurrer.cpp.s
 
-.PHONY : src/MPIDataProcessor.s
+.PHONY : src/ImageBlurrer.s
 
 # target to generate assembly for a file
-src/MPIDataProcessor.cpp.s:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.s
-.PHONY : src/MPIDataProcessor.cpp.s
+src/ImageBlurrer.cpp.s:
+	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/ImageBlurrer.cpp.s
+.PHONY : src/ImageBlurrer.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -213,12 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... exe"
 	@echo "... edit_cache"
-	@echo "... src/DataProcessor.o"
-	@echo "... src/DataProcessor.i"
-	@echo "... src/DataProcessor.s"
-	@echo "... src/MPIDataProcessor.o"
-	@echo "... src/MPIDataProcessor.i"
-	@echo "... src/MPIDataProcessor.s"
+	@echo "... src/ImageBlurrer.o"
+	@echo "... src/ImageBlurrer.i"
+	@echo "... src/ImageBlurrer.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

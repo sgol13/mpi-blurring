@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/exe.dir/src/DataProcessor.cpp.o"
-  "CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o"
+  "CMakeFiles/exe.dir/src/ImageBlurrer.cpp.o"
   "CMakeFiles/exe.dir/src/main.cpp.o"
   "exe.pdb"
   "exe"

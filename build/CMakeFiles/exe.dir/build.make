@@ -57,57 +57,33 @@ include CMakeFiles/exe.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/exe.dir/flags.make
 
-CMakeFiles/exe.dir/src/DataProcessor.cpp.o: CMakeFiles/exe.dir/flags.make
-CMakeFiles/exe.dir/src/DataProcessor.cpp.o: ../src/DataProcessor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/code/projects/mpi-blurring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exe.dir/src/DataProcessor.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exe.dir/src/DataProcessor.cpp.o -c /home/szymon/code/projects/mpi-blurring/src/DataProcessor.cpp
+CMakeFiles/exe.dir/src/ImageBlurrer.cpp.o: CMakeFiles/exe.dir/flags.make
+CMakeFiles/exe.dir/src/ImageBlurrer.cpp.o: ../src/ImageBlurrer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/code/projects/mpi-blurring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exe.dir/src/ImageBlurrer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exe.dir/src/ImageBlurrer.cpp.o -c /home/szymon/code/projects/mpi-blurring/src/ImageBlurrer.cpp
 
-CMakeFiles/exe.dir/src/DataProcessor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exe.dir/src/DataProcessor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szymon/code/projects/mpi-blurring/src/DataProcessor.cpp > CMakeFiles/exe.dir/src/DataProcessor.cpp.i
+CMakeFiles/exe.dir/src/ImageBlurrer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exe.dir/src/ImageBlurrer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szymon/code/projects/mpi-blurring/src/ImageBlurrer.cpp > CMakeFiles/exe.dir/src/ImageBlurrer.cpp.i
 
-CMakeFiles/exe.dir/src/DataProcessor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exe.dir/src/DataProcessor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szymon/code/projects/mpi-blurring/src/DataProcessor.cpp -o CMakeFiles/exe.dir/src/DataProcessor.cpp.s
+CMakeFiles/exe.dir/src/ImageBlurrer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exe.dir/src/ImageBlurrer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szymon/code/projects/mpi-blurring/src/ImageBlurrer.cpp -o CMakeFiles/exe.dir/src/ImageBlurrer.cpp.s
 
-CMakeFiles/exe.dir/src/DataProcessor.cpp.o.requires:
+CMakeFiles/exe.dir/src/ImageBlurrer.cpp.o.requires:
 
-.PHONY : CMakeFiles/exe.dir/src/DataProcessor.cpp.o.requires
+.PHONY : CMakeFiles/exe.dir/src/ImageBlurrer.cpp.o.requires
 
-CMakeFiles/exe.dir/src/DataProcessor.cpp.o.provides: CMakeFiles/exe.dir/src/DataProcessor.cpp.o.requires
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/DataProcessor.cpp.o.provides.build
-.PHONY : CMakeFiles/exe.dir/src/DataProcessor.cpp.o.provides
+CMakeFiles/exe.dir/src/ImageBlurrer.cpp.o.provides: CMakeFiles/exe.dir/src/ImageBlurrer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/ImageBlurrer.cpp.o.provides.build
+.PHONY : CMakeFiles/exe.dir/src/ImageBlurrer.cpp.o.provides
 
-CMakeFiles/exe.dir/src/DataProcessor.cpp.o.provides.build: CMakeFiles/exe.dir/src/DataProcessor.cpp.o
-
-
-CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o: CMakeFiles/exe.dir/flags.make
-CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o: ../src/MPIDataProcessor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/code/projects/mpi-blurring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o -c /home/szymon/code/projects/mpi-blurring/src/MPIDataProcessor.cpp
-
-CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szymon/code/projects/mpi-blurring/src/MPIDataProcessor.cpp > CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.i
-
-CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szymon/code/projects/mpi-blurring/src/MPIDataProcessor.cpp -o CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.s
-
-CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o.requires:
-
-.PHONY : CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o.requires
-
-CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o.provides: CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o.requires
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o.provides.build
-.PHONY : CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o.provides
-
-CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o.provides.build: CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o
+CMakeFiles/exe.dir/src/ImageBlurrer.cpp.o.provides.build: CMakeFiles/exe.dir/src/ImageBlurrer.cpp.o
 
 
 CMakeFiles/exe.dir/src/main.cpp.o: CMakeFiles/exe.dir/flags.make
 CMakeFiles/exe.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/code/projects/mpi-blurring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exe.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/code/projects/mpi-blurring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exe.dir/src/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exe.dir/src/main.cpp.o -c /home/szymon/code/projects/mpi-blurring/src/main.cpp
 
 CMakeFiles/exe.dir/src/main.cpp.i: cmake_force
@@ -131,21 +107,19 @@ CMakeFiles/exe.dir/src/main.cpp.o.provides.build: CMakeFiles/exe.dir/src/main.cp
 
 # Object files for target exe
 exe_OBJECTS = \
-"CMakeFiles/exe.dir/src/DataProcessor.cpp.o" \
-"CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o" \
+"CMakeFiles/exe.dir/src/ImageBlurrer.cpp.o" \
 "CMakeFiles/exe.dir/src/main.cpp.o"
 
 # External object files for target exe
 exe_EXTERNAL_OBJECTS =
 
-exe: CMakeFiles/exe.dir/src/DataProcessor.cpp.o
-exe: CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o
+exe: CMakeFiles/exe.dir/src/ImageBlurrer.cpp.o
 exe: CMakeFiles/exe.dir/src/main.cpp.o
 exe: CMakeFiles/exe.dir/build.make
 exe: /usr/local/lib/libmpicxx.so
 exe: /usr/local/lib/libmpi.so
 exe: CMakeFiles/exe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/szymon/code/projects/mpi-blurring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/szymon/code/projects/mpi-blurring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/exe.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,8 +127,7 @@ CMakeFiles/exe.dir/build: exe
 
 .PHONY : CMakeFiles/exe.dir/build
 
-CMakeFiles/exe.dir/requires: CMakeFiles/exe.dir/src/DataProcessor.cpp.o.requires
-CMakeFiles/exe.dir/requires: CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o.requires
+CMakeFiles/exe.dir/requires: CMakeFiles/exe.dir/src/ImageBlurrer.cpp.o.requires
 CMakeFiles/exe.dir/requires: CMakeFiles/exe.dir/src/main.cpp.o.requires
 
 .PHONY : CMakeFiles/exe.dir/requires
