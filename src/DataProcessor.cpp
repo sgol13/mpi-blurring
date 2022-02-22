@@ -22,19 +22,10 @@ int DataProcessor::round_near(double b) {
         return (int)b + 1;
 }
 
-void DataProcessor::setMagicFunction(MagicFuntion *function) {
-    this->function = function;
-    setDataPortion(function->getDataPortionSize());
-}
 
-void DataProcessor::setDataPortion(int dataPortionSize) {
-    this->dataPortionSize = dataPortionSize;
-    dataPortion = new double[dataPortionSize];
-    setMargin();
-}
-
-void DataProcessor::setMargin() {
-    margin = round_near(sqrt(dataPortionSize) - 1) / 2;
+void DataProcessor::setMargin(int margin) {
+    this->margin = margin;
+    // margin = round_near(sqrt(dataPortionSize) - 1) / 2;
     // cout << "Margin " << margin << endl;
 }
 

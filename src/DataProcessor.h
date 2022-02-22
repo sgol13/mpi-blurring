@@ -8,8 +8,6 @@
 #ifndef DATAPROCESSOR_H_
 #define DATAPROCESSOR_H_
 
-#include "MagicFuntion.h"
-
 class DataProcessor {
   private:
     int round_near(double b);
@@ -19,16 +17,10 @@ class DataProcessor {
     double **data;
     double **nextData;
     int dataSize;
-    double *dataPortion;
-    int dataPortionSize;
 
-    MagicFuntion *function;
-
-    void setMargin();
     virtual void singleExecution() = 0;
     virtual void shareData() = 0;
     virtual void collectData() = 0;
-    virtual void setDataPortion(int dataPortion);
 
   public:
     DataProcessor();
@@ -36,7 +28,7 @@ class DataProcessor {
     virtual double **getResult() = 0;
     void setInitialData(double **data, int size);
     void execute(int repetitions);
-    void setMagicFunction(MagicFuntion *function);
+    void setMargin(int margin);
 };
 
 #endif /* DATAPROCESSOR_H_ */

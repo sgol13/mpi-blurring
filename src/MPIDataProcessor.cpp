@@ -32,8 +32,14 @@ void MPIDataProcessor::singleExecution() {
 
             if (c >= margin && c + margin < dataSize && r >= margin && r <= lastRow) {
 
-                createDataPortion(r, c, localBuffer);
-                nextData[r][c] = function->calc(localBuffer);
+                double sum = 0;
+                for (int i = r - margin; i <= r + margin; i++) {
+                    for (int j = c - margin; j <= c + margin; j++) {
+                        sum += data[i][j];
+                    }
+                }
+
+                nextData[r][c] = sum / ((2 * margin + 1) * (2 * margin + 1));
 
             } else {
                 nextData[r][c] = data[r][c];
@@ -66,7 +72,6 @@ void MPIDataProcessor::shareData() {
     }
 
     procRows = calcRowsNum(rank);
-    localBuffer = new double[dataPortionSize];
 
     // SHARE DATA FRAMES
     if (rank == 0) {

@@ -57,33 +57,9 @@ include CMakeFiles/exe.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/exe.dir/flags.make
 
-CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.o: CMakeFiles/exe.dir/flags.make
-CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.o: ../src/ArithmeticMeanFunction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/code/projects/mpi-blurring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.o -c /home/szymon/code/projects/mpi-blurring/src/ArithmeticMeanFunction.cpp
-
-CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szymon/code/projects/mpi-blurring/src/ArithmeticMeanFunction.cpp > CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.i
-
-CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szymon/code/projects/mpi-blurring/src/ArithmeticMeanFunction.cpp -o CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.s
-
-CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.o.requires:
-
-.PHONY : CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.o.requires
-
-CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.o.provides: CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.o.requires
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.o.provides.build
-.PHONY : CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.o.provides
-
-CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.o.provides.build: CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.o
-
-
 CMakeFiles/exe.dir/src/DataProcessor.cpp.o: CMakeFiles/exe.dir/flags.make
 CMakeFiles/exe.dir/src/DataProcessor.cpp.o: ../src/DataProcessor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/code/projects/mpi-blurring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exe.dir/src/DataProcessor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/code/projects/mpi-blurring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exe.dir/src/DataProcessor.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exe.dir/src/DataProcessor.cpp.o -c /home/szymon/code/projects/mpi-blurring/src/DataProcessor.cpp
 
 CMakeFiles/exe.dir/src/DataProcessor.cpp.i: cmake_force
@@ -105,33 +81,9 @@ CMakeFiles/exe.dir/src/DataProcessor.cpp.o.provides: CMakeFiles/exe.dir/src/Data
 CMakeFiles/exe.dir/src/DataProcessor.cpp.o.provides.build: CMakeFiles/exe.dir/src/DataProcessor.cpp.o
 
 
-CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.o: CMakeFiles/exe.dir/flags.make
-CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.o: ../src/InitialDataGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/code/projects/mpi-blurring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.o -c /home/szymon/code/projects/mpi-blurring/src/InitialDataGenerator.cpp
-
-CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szymon/code/projects/mpi-blurring/src/InitialDataGenerator.cpp > CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.i
-
-CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szymon/code/projects/mpi-blurring/src/InitialDataGenerator.cpp -o CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.s
-
-CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.o.requires:
-
-.PHONY : CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.o.requires
-
-CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.o.provides: CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.o.requires
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.o.provides.build
-.PHONY : CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.o.provides
-
-CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.o.provides.build: CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.o
-
-
 CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o: CMakeFiles/exe.dir/flags.make
 CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o: ../src/MPIDataProcessor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/code/projects/mpi-blurring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/code/projects/mpi-blurring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o -c /home/szymon/code/projects/mpi-blurring/src/MPIDataProcessor.cpp
 
 CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.i: cmake_force
@@ -153,57 +105,9 @@ CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o.provides: CMakeFiles/exe.dir/src/M
 CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o.provides.build: CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o
 
 
-CMakeFiles/exe.dir/src/MagicFuntion.cpp.o: CMakeFiles/exe.dir/flags.make
-CMakeFiles/exe.dir/src/MagicFuntion.cpp.o: ../src/MagicFuntion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/code/projects/mpi-blurring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/exe.dir/src/MagicFuntion.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exe.dir/src/MagicFuntion.cpp.o -c /home/szymon/code/projects/mpi-blurring/src/MagicFuntion.cpp
-
-CMakeFiles/exe.dir/src/MagicFuntion.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exe.dir/src/MagicFuntion.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szymon/code/projects/mpi-blurring/src/MagicFuntion.cpp > CMakeFiles/exe.dir/src/MagicFuntion.cpp.i
-
-CMakeFiles/exe.dir/src/MagicFuntion.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exe.dir/src/MagicFuntion.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szymon/code/projects/mpi-blurring/src/MagicFuntion.cpp -o CMakeFiles/exe.dir/src/MagicFuntion.cpp.s
-
-CMakeFiles/exe.dir/src/MagicFuntion.cpp.o.requires:
-
-.PHONY : CMakeFiles/exe.dir/src/MagicFuntion.cpp.o.requires
-
-CMakeFiles/exe.dir/src/MagicFuntion.cpp.o.provides: CMakeFiles/exe.dir/src/MagicFuntion.cpp.o.requires
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/MagicFuntion.cpp.o.provides.build
-.PHONY : CMakeFiles/exe.dir/src/MagicFuntion.cpp.o.provides
-
-CMakeFiles/exe.dir/src/MagicFuntion.cpp.o.provides.build: CMakeFiles/exe.dir/src/MagicFuntion.cpp.o
-
-
-CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.o: CMakeFiles/exe.dir/flags.make
-CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.o: ../src/SimpleInitialDataGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/code/projects/mpi-blurring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.o -c /home/szymon/code/projects/mpi-blurring/src/SimpleInitialDataGenerator.cpp
-
-CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szymon/code/projects/mpi-blurring/src/SimpleInitialDataGenerator.cpp > CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.i
-
-CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szymon/code/projects/mpi-blurring/src/SimpleInitialDataGenerator.cpp -o CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.s
-
-CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.o.requires:
-
-.PHONY : CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.o.requires
-
-CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.o.provides: CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.o.requires
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.o.provides.build
-.PHONY : CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.o.provides
-
-CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.o.provides.build: CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.o
-
-
 CMakeFiles/exe.dir/src/main.cpp.o: CMakeFiles/exe.dir/flags.make
 CMakeFiles/exe.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/code/projects/mpi-blurring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/exe.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/code/projects/mpi-blurring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exe.dir/src/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exe.dir/src/main.cpp.o -c /home/szymon/code/projects/mpi-blurring/src/main.cpp
 
 CMakeFiles/exe.dir/src/main.cpp.i: cmake_force
@@ -227,29 +131,21 @@ CMakeFiles/exe.dir/src/main.cpp.o.provides.build: CMakeFiles/exe.dir/src/main.cp
 
 # Object files for target exe
 exe_OBJECTS = \
-"CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.o" \
 "CMakeFiles/exe.dir/src/DataProcessor.cpp.o" \
-"CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.o" \
 "CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o" \
-"CMakeFiles/exe.dir/src/MagicFuntion.cpp.o" \
-"CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.o" \
 "CMakeFiles/exe.dir/src/main.cpp.o"
 
 # External object files for target exe
 exe_EXTERNAL_OBJECTS =
 
-exe: CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.o
 exe: CMakeFiles/exe.dir/src/DataProcessor.cpp.o
-exe: CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.o
 exe: CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o
-exe: CMakeFiles/exe.dir/src/MagicFuntion.cpp.o
-exe: CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.o
 exe: CMakeFiles/exe.dir/src/main.cpp.o
 exe: CMakeFiles/exe.dir/build.make
 exe: /usr/local/lib/libmpicxx.so
 exe: /usr/local/lib/libmpi.so
 exe: CMakeFiles/exe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/szymon/code/projects/mpi-blurring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/szymon/code/projects/mpi-blurring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/exe.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -257,12 +153,8 @@ CMakeFiles/exe.dir/build: exe
 
 .PHONY : CMakeFiles/exe.dir/build
 
-CMakeFiles/exe.dir/requires: CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.o.requires
 CMakeFiles/exe.dir/requires: CMakeFiles/exe.dir/src/DataProcessor.cpp.o.requires
-CMakeFiles/exe.dir/requires: CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.o.requires
 CMakeFiles/exe.dir/requires: CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.o.requires
-CMakeFiles/exe.dir/requires: CMakeFiles/exe.dir/src/MagicFuntion.cpp.o.requires
-CMakeFiles/exe.dir/requires: CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.o.requires
 CMakeFiles/exe.dir/requires: CMakeFiles/exe.dir/src/main.cpp.o.requires
 
 .PHONY : CMakeFiles/exe.dir/requires

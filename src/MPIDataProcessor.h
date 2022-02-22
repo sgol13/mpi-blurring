@@ -35,7 +35,6 @@ class MPIDataProcessor : public DataProcessor {
     void copyFromBuffer(double *buffer, int firstRowCopy, int rowsNumCopy);
 
     double *marginBuffer;
-    double *localBuffer;
 
     int rank;
     int procNum;

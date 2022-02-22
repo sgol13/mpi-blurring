@@ -123,33 +123,6 @@ exe/fast:
 	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/build
 .PHONY : exe/fast
 
-src/ArithmeticMeanFunction.o: src/ArithmeticMeanFunction.cpp.o
-
-.PHONY : src/ArithmeticMeanFunction.o
-
-# target to build an object file
-src/ArithmeticMeanFunction.cpp.o:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.o
-.PHONY : src/ArithmeticMeanFunction.cpp.o
-
-src/ArithmeticMeanFunction.i: src/ArithmeticMeanFunction.cpp.i
-
-.PHONY : src/ArithmeticMeanFunction.i
-
-# target to preprocess a source file
-src/ArithmeticMeanFunction.cpp.i:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.i
-.PHONY : src/ArithmeticMeanFunction.cpp.i
-
-src/ArithmeticMeanFunction.s: src/ArithmeticMeanFunction.cpp.s
-
-.PHONY : src/ArithmeticMeanFunction.s
-
-# target to generate assembly for a file
-src/ArithmeticMeanFunction.cpp.s:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/ArithmeticMeanFunction.cpp.s
-.PHONY : src/ArithmeticMeanFunction.cpp.s
-
 src/DataProcessor.o: src/DataProcessor.cpp.o
 
 .PHONY : src/DataProcessor.o
@@ -177,33 +150,6 @@ src/DataProcessor.cpp.s:
 	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/DataProcessor.cpp.s
 .PHONY : src/DataProcessor.cpp.s
 
-src/InitialDataGenerator.o: src/InitialDataGenerator.cpp.o
-
-.PHONY : src/InitialDataGenerator.o
-
-# target to build an object file
-src/InitialDataGenerator.cpp.o:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.o
-.PHONY : src/InitialDataGenerator.cpp.o
-
-src/InitialDataGenerator.i: src/InitialDataGenerator.cpp.i
-
-.PHONY : src/InitialDataGenerator.i
-
-# target to preprocess a source file
-src/InitialDataGenerator.cpp.i:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.i
-.PHONY : src/InitialDataGenerator.cpp.i
-
-src/InitialDataGenerator.s: src/InitialDataGenerator.cpp.s
-
-.PHONY : src/InitialDataGenerator.s
-
-# target to generate assembly for a file
-src/InitialDataGenerator.cpp.s:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/InitialDataGenerator.cpp.s
-.PHONY : src/InitialDataGenerator.cpp.s
-
 src/MPIDataProcessor.o: src/MPIDataProcessor.cpp.o
 
 .PHONY : src/MPIDataProcessor.o
@@ -230,60 +176,6 @@ src/MPIDataProcessor.s: src/MPIDataProcessor.cpp.s
 src/MPIDataProcessor.cpp.s:
 	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/MPIDataProcessor.cpp.s
 .PHONY : src/MPIDataProcessor.cpp.s
-
-src/MagicFuntion.o: src/MagicFuntion.cpp.o
-
-.PHONY : src/MagicFuntion.o
-
-# target to build an object file
-src/MagicFuntion.cpp.o:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/MagicFuntion.cpp.o
-.PHONY : src/MagicFuntion.cpp.o
-
-src/MagicFuntion.i: src/MagicFuntion.cpp.i
-
-.PHONY : src/MagicFuntion.i
-
-# target to preprocess a source file
-src/MagicFuntion.cpp.i:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/MagicFuntion.cpp.i
-.PHONY : src/MagicFuntion.cpp.i
-
-src/MagicFuntion.s: src/MagicFuntion.cpp.s
-
-.PHONY : src/MagicFuntion.s
-
-# target to generate assembly for a file
-src/MagicFuntion.cpp.s:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/MagicFuntion.cpp.s
-.PHONY : src/MagicFuntion.cpp.s
-
-src/SimpleInitialDataGenerator.o: src/SimpleInitialDataGenerator.cpp.o
-
-.PHONY : src/SimpleInitialDataGenerator.o
-
-# target to build an object file
-src/SimpleInitialDataGenerator.cpp.o:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.o
-.PHONY : src/SimpleInitialDataGenerator.cpp.o
-
-src/SimpleInitialDataGenerator.i: src/SimpleInitialDataGenerator.cpp.i
-
-.PHONY : src/SimpleInitialDataGenerator.i
-
-# target to preprocess a source file
-src/SimpleInitialDataGenerator.cpp.i:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.i
-.PHONY : src/SimpleInitialDataGenerator.cpp.i
-
-src/SimpleInitialDataGenerator.s: src/SimpleInitialDataGenerator.cpp.s
-
-.PHONY : src/SimpleInitialDataGenerator.s
-
-# target to generate assembly for a file
-src/SimpleInitialDataGenerator.cpp.s:
-	$(MAKE) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/src/SimpleInitialDataGenerator.cpp.s
-.PHONY : src/SimpleInitialDataGenerator.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -321,24 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... exe"
 	@echo "... edit_cache"
-	@echo "... src/ArithmeticMeanFunction.o"
-	@echo "... src/ArithmeticMeanFunction.i"
-	@echo "... src/ArithmeticMeanFunction.s"
 	@echo "... src/DataProcessor.o"
 	@echo "... src/DataProcessor.i"
 	@echo "... src/DataProcessor.s"
-	@echo "... src/InitialDataGenerator.o"
-	@echo "... src/InitialDataGenerator.i"
-	@echo "... src/InitialDataGenerator.s"
 	@echo "... src/MPIDataProcessor.o"
 	@echo "... src/MPIDataProcessor.i"
 	@echo "... src/MPIDataProcessor.s"
-	@echo "... src/MagicFuntion.o"
-	@echo "... src/MagicFuntion.i"
-	@echo "... src/MagicFuntion.s"
-	@echo "... src/SimpleInitialDataGenerator.o"
-	@echo "... src/SimpleInitialDataGenerator.i"
-	@echo "... src/SimpleInitialDataGenerator.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

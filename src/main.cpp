@@ -1,8 +1,5 @@
-#include "ArithmeticMeanFunction.h"
 #include "DataProcessor.h"
 #include "MPIDataProcessor.h"
-#include "MagicFuntion.h"
-#include "SimpleInitialDataGenerator.h"
 #include "mpi.h"
 #include <chrono>
 #include <iomanip>
@@ -29,6 +26,27 @@ void showTable(double **table, int dataSize) {
     }
 }
 
+void fillWithData(double **data, int dataSize, int margin) {
+
+    int marginValue = 1;
+    int bulkValue = 10;
+
+    int otherMargin = dataSize - margin - 1;
+    for (int i = 0; i < dataSize; i++)
+        for (int j = 0; j < dataSize; j++) {
+            if (i < margin)
+                data[i][j] = marginValue;
+            else if (j < margin)
+                data[i][j] = marginValue;
+            else if (i > otherMargin)
+                data[i][j] = marginValue;
+            else if (j > otherMargin)
+                data[i][j] = marginValue;
+            else
+                data[i][j] = bulkValue;
+        }
+}
+
 int main(int argc, char *argv[]) {
 
     MPI_Init(&argc, &argv);
@@ -40,10 +58,8 @@ int main(int argc, char *argv[]) {
     const int REPETITIONS = 4;
 
     int dataPortion = calcDataPortion(MARGIN);
-    MagicFuntion *mf = new ArithmeticMeanFunction(dataPortion);
     DataProcessor *dp = new MPIDataProcessor();
-
-    dp->setMagicFunction(mf);
+    dp->setMargin(MARGIN);
 
     if (rank == 0) {
 
@@ -51,8 +67,7 @@ int main(int argc, char *argv[]) {
         for (int i = 0; i < DATA_SIZE; i++)
             initialData[i] = new double[DATA_SIZE];
 
-        InitialDataGenerator *generator = new SimpleInitialDataGenerator(1, 10);
-        generator->fillWithData(initialData, DATA_SIZE, MARGIN);
+        fillWithData(initialData, DATA_SIZE, MARGIN);
         showTable(initialData, DATA_SIZE);
 
         dp->setInitialData(initialData, DATA_SIZE);

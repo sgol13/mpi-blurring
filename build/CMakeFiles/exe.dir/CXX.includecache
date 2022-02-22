@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/szymon/code/projects/mpi-blurring/src/ArithmeticMeanFunction.cpp
-ArithmeticMeanFunction.h
-/home/szymon/code/projects/mpi-blurring/src/ArithmeticMeanFunction.h
-
-/home/szymon/code/projects/mpi-blurring/src/ArithmeticMeanFunction.h
-MagicFuntion.h
-/home/szymon/code/projects/mpi-blurring/src/MagicFuntion.h
-
 /home/szymon/code/projects/mpi-blurring/src/DataProcessor.cpp
 DataProcessor.h
 /home/szymon/code/projects/mpi-blurring/src/DataProcessor.h
@@ -23,14 +15,6 @@ math.h
 -
 
 /home/szymon/code/projects/mpi-blurring/src/DataProcessor.h
-MagicFuntion.h
-/home/szymon/code/projects/mpi-blurring/src/MagicFuntion.h
-
-/home/szymon/code/projects/mpi-blurring/src/InitialDataGenerator.cpp
-InitialDataGenerator.h
-/home/szymon/code/projects/mpi-blurring/src/InitialDataGenerator.h
-
-/home/szymon/code/projects/mpi-blurring/src/InitialDataGenerator.h
 
 /home/szymon/code/projects/mpi-blurring/src/MPIDataProcessor.cpp
 MPIDataProcessor.h
@@ -46,31 +30,11 @@ iostream
 DataProcessor.h
 /home/szymon/code/projects/mpi-blurring/src/DataProcessor.h
 
-/home/szymon/code/projects/mpi-blurring/src/MagicFuntion.cpp
-MagicFuntion.h
-/home/szymon/code/projects/mpi-blurring/src/MagicFuntion.h
-
-/home/szymon/code/projects/mpi-blurring/src/MagicFuntion.h
-
-/home/szymon/code/projects/mpi-blurring/src/SimpleInitialDataGenerator.cpp
-SimpleInitialDataGenerator.h
-/home/szymon/code/projects/mpi-blurring/src/SimpleInitialDataGenerator.h
-
-/home/szymon/code/projects/mpi-blurring/src/SimpleInitialDataGenerator.h
-InitialDataGenerator.h
-/home/szymon/code/projects/mpi-blurring/src/InitialDataGenerator.h
-
 /home/szymon/code/projects/mpi-blurring/src/main.cpp
-ArithmeticMeanFunction.h
-/home/szymon/code/projects/mpi-blurring/src/ArithmeticMeanFunction.h
 DataProcessor.h
 /home/szymon/code/projects/mpi-blurring/src/DataProcessor.h
 MPIDataProcessor.h
 /home/szymon/code/projects/mpi-blurring/src/MPIDataProcessor.h
-MagicFuntion.h
-/home/szymon/code/projects/mpi-blurring/src/MagicFuntion.h
-SimpleInitialDataGenerator.h
-/home/szymon/code/projects/mpi-blurring/src/SimpleInitialDataGenerator.h
 mpi.h
 /home/szymon/code/projects/mpi-blurring/src/mpi.h
 chrono
