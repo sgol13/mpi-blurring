@@ -1,3 +1,0 @@
-/home/szymon/code/projects/mpi-blurring/build/CMakeFiles/rebuild_cache.dir
-/home/szymon/code/projects/mpi-blurring/build/CMakeFiles/exe.dir
-/home/szymon/code/projects/mpi-blurring/build/CMakeFiles/edit_cache.dir
