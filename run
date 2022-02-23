@@ -1,0 +1,37 @@
+#!/bin/bash
+
+PROC=4 # number of processes, passed to mpirun
+
+modify_path () {
+
+    FILE="$1"
+
+    # check if not a relative path: "~/path /path"
+    if [[ "$FILE" =~ ^/.*|^~/.* ]]; then
+        echo "$FILE"
+    fi
+
+    echo "../"$FILE""
+}
+
+# building
+
+if [[ ! -d "build" ]]; then
+    mkdir build
+fi
+
+cd build
+
+if [[ ! -f "Makefile" ]]; then
+    cmake ..
+fi
+
+make
+
+# running
+
+IN_FILE=$(modify_path "$1")
+OUT_FILE=$(modify_path "$2")
+
+echo "running..."
+mpirun -np $PROC ./exe "$IN_FILE" "$OUT_FILE" $3 $4
