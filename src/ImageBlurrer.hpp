@@ -32,9 +32,10 @@ class ImageBlurrer {
     int processes_number;
     int process_rows;
 
-    void singleExecution();
     void shareData();
-    void collectData();
+    void collectData(bool swap_images);
+    void singleIteration();
+    double blurPixel(int r, int c);
 
     void sendMargins();
     void receiveMargins();
