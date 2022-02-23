@@ -1,5 +1,5 @@
 // MPI blurrer
-// Szymon Gołębiowski
+// Szymon Golebiowski
 
 #ifndef IMAGE_BLURRER_HPP
 #define IMAGE_BLURRER_HPP

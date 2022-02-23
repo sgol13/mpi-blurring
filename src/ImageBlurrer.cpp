@@ -1,5 +1,5 @@
 // MPI blurrer
-// Szymon Gołębiowski
+// Szymon Golebiowski
 
 #include "ImageBlurrer.hpp"
 

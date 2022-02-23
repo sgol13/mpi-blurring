@@ -1,6 +1,9 @@
+// MPI blurrer
+// Szymon Golebiowski
+
 #include "ImageBlurrer.hpp"
 #include "mpi.h"
-#include "pnm.hpp"
+#include "pnm.hpp" // https://github.com/ToruNiina/pnm
 #include <exception>
 #include <iomanip>
 #include <iostream>
