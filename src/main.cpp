@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
     MPI_Comm_size(MPI_COMM_WORLD, &processes_number);
 
     int error = 0;
-    string filename;
+    string input_filename, output_filename;
     int iterations;
     int margin;
 
@@ -30,11 +30,12 @@ int main(int argc, char *argv[]) {
 
     if (my_rank == 0) {
 
-        if (argc == 4) {
+        if (argc == 5) {
 
-            filename = argv[1];
-            iterations = atoi(argv[2]);
-            margin = atoi(argv[3]);
+            input_filename = argv[1];
+            output_filename = argv[2];
+            iterations = atoi(argv[3]);
+            margin = atoi(argv[4]);
 
             if (iterations < 0 || margin < 0) {
                 error = 1;
@@ -43,14 +44,14 @@ int main(int argc, char *argv[]) {
             if (error == 0) {
 
                 try {
-                    ppm_image = pnm::read_pgm(filename);
+                    ppm_image = pnm::read_pgm(input_filename);
                 } catch (runtime_error exception) {
                     error = 2;
                 }
             }
 
         } else {
-            error = true;
+            error = 1;
         }
 
         int buffer[3] = {error, iterations, margin};
@@ -62,10 +63,12 @@ int main(int argc, char *argv[]) {
 
             cerr << "ERROR, expected 4 arguments: FILENAME ITERATIONS "
                     "MARGIN\n";
+            MPI_Finalize();
             return 1;
         } else if (error == 2) {
 
-            cerr << "ERROR, cannot open file " << filename << "\n";
+            cerr << "ERROR, cannot open file " << input_filename << "\n";
+            MPI_Finalize();
             return 2;
         }
 
@@ -80,6 +83,7 @@ int main(int argc, char *argv[]) {
         margin = buffer[2];
 
         if (error) {
+            MPI_Finalize();
             return error;
         }
     }
@@ -117,14 +121,35 @@ int main(int argc, char *argv[]) {
         }
 
         try {
-            pnm::write("blurred_" + filename, ppm_image, pnm::format::binary);
+            pnm::write(output_filename, ppm_image, pnm::format::binary);
         } catch (runtime_error exception) {
+            error = 3;
         }
 
         for (int i = 0; i < size_R; i++) {
             delete[] raw_image[i];
         }
         delete[] raw_image;
+
+        for (int destination = 1; destination < processes_number; destination++) {
+            MPI_Send(&error, 1, MPI_INT, destination, 0, MPI_COMM_WORLD);
+        }
+
+        if (error) {
+            cerr << "ERROR, cannot save file " << output_filename << "\n";
+            MPI_Finalize();
+            return error;
+        }
+
+    } else {
+
+        MPI_Status status;
+        MPI_Recv(&error, 1, MPI_INT, 0, 0, MPI_COMM_WORLD, &status);
+
+        if (error) {
+            MPI_Finalize();
+            return error;
+        }
     }
 
     MPI_Finalize();
