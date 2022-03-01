@@ -3,7 +3,11 @@ This program blurs PGM images with the use of Message Passing Interface. I've wr
 
 <img src="examples/division.png" width="1000">
 
-# Compilation and usage
+## Requirements
+* CMake
+* Make
+* MPI (e.g. MPICH - [download](https://www.mpich.org/downloads/)) 
+## Compilation and usage
 First, clone the repository:
 ```
 git clone https://github.com/sgol13/mpi-blurring.git
